@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Space Invaders Mobile</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: black; touch-action: none; }
+        canvas { display: block; }
+        #control-area { 
+            position: absolute; 
+            bottom: 20px; 
+            right: 20px; 
+            width: 150px; 
+            height: 150px; 
+            background: rgba(255,255,255,0.1); 
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        #control { 
+            position: absolute; 
+            width: 70px; 
+            height: 70px; 
+            background: rgba(255,255,255,0.5); 
+            border-radius: 50%; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            transition: all 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="control-area">
+        <div id="control"></div>
+    </div>
+    <script>
+        // ここに先ほどのJavaScriptコードをそのまま貼り付けます
+        // （長さの制限のため、ここでは省略しています）
+    </script>
+</body>
+</html>
